@@ -1,0 +1,16 @@
+.error, .success {
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.nav-item {
+  background: #080;
+  margin: 0 5px;
+  border-radius: 3px;
+  padding: 0px 7px;
+}
+.nav-link {
+  color: #fff !important;
+}
