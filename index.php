@@ -28,14 +28,22 @@ mysqli_close($conn);
                 <th scope="col">Action</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="search-container">
             <?php
             foreach ($students as $student) { ?>
-                <tr>
-                    <th scope="row"><?= $student['name']; ?></th>
-                    <td><?= $student['roll_no']; ?></td>
-                    <td><?= $student['email']; ?></td>
-                    <td><?= $student['phone']; ?></td>
+                <tr class="search-item">
+                    <td>
+                        <p><?= $student['name']; ?></p>
+                    </td>
+                    <td>
+                        <p><?= $student['roll_no']; ?></p>
+                    </td>
+                    <td>
+                        <p><?= $student['email']; ?></p>
+                    </td>
+                    <td>
+                        <p><?= $student['phone']; ?></p>
+                    </td>
                     <td>
                         <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#view<?= $student['id'] ?>">
                             View
